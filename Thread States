@@ -1,0 +1,41 @@
+// ThreadStateDemo.java
+
+class CustomThread implements Runnable {
+    @Override
+    public void run() {
+        try {
+            System.out.println(Thread.currentThread().getName() + " is RUNNING");
+            // Simulate some work with sleep
+            Thread.sleep(10000);
+            System.out.println(Thread.currentThread().getName() + " is FINISHED");
+        } catch (InterruptedException e) {
+            System.out.println(Thread.currentThread().getName() + " was interrupted.");
+        }
+    }
+}
+
+public class ThreadStateDemo {
+    public static void main(String[] args) throws InterruptedException {
+        Thread thread = new Thread(new CustomThread(), "CustomThread");
+
+        // Thread State: NEW
+        System.out.println("Thread State after creation: " + thread.getState());
+
+        thread.start();
+        
+        // Thread State: RUNNABLE (or possibly TIMED_WAITING if it's sleeping)
+        System.out.println("Thread State after calling start(): " + thread.getState());
+
+        // Wait for thread to start and run
+        Thread.sleep(100); // short sleep to allow the thread to change state
+
+        // Checking the thread state while it's running
+        System.out.println("Thread State during run(): " + thread.getState());
+
+        // Wait for the thread to finish execution
+        thread.join();
+
+        // Thread State: TERMINATED
+        System.out.println("Thread State after completion: " + thread.getState());
+    }
+}
