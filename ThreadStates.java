@@ -51,7 +51,7 @@ class CustomThread2 implements Runnable {
     }
 }
 
-public class ThreadStateDemo {
+public class ThreadStates {
     public static void main(String[] args) throws InterruptedException {
         Scanner sc = new Scanner(System.in);
 
