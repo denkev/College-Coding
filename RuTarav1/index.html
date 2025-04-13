@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RuTara Web</title>
+  <style>
+    body {
+      background-color: #000040;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    .logo {
+      width: 128px;
+    }
+    .input-box {
+      margin: 10px auto;
+      padding: 10px;
+      width: 300px;
+    }
+    .output-box {
+      margin: 10px;
+      background: white;
+      color: black;
+      padding: 10px;
+      border-radius: 5px;
+      display: inline-block;
+      width: 180px;
+    }
+    .jeep-image {
+      width: 200px;
+      height: 130px;
+      border: 2px solid white;
+      object-fit: cover;
+      margin: 20px auto;
+    }
+    button {
+      background-color: #c0c000;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <img src="images/logo.png" class="logo" onclick="alert('Biyahe mo, Planado!')" />
+
+  <div>
+    <textarea id="Address1" class="input-box" placeholder="Enter pickup address"></textarea><br />
+    <textarea id="Address2" class="input-box" placeholder="Enter drop-off address"></textarea><br />
+    <button onclick="findJeep()">Find me a jeep</button>
+  </div>
+
+  <div>
+    <div class="output-box" id="finalAddress"></div>
+    <div class="output-box" id="jeepType"></div>
+  </div>
+
+  <img id="jeepPic" class="jeep-image" src="" alt="Jeep Preview" />
+
+  <script>
+    const jeepRoutes = [
+      { from: "Pasay Rotonda", to: "EDSA Taft", jeep: "jeepA" },
+      { from: "EDSA Taft", to: "Baclaran", jeep: "jeepB" },
+      { from: "Baclaran", to: "Libertad", jeep: "jeepC" },
+      { from: "Libertad", to: "Cartimar", jeep: "jeepD" },
+      { from: "Cartimar", to: "Gil Puyat", jeep: "jeepE" }
+    ];
+
+    function findJeep() {
+      const address1 = document.getElementById("Address1").value.trim();
+      const address2 = document.getElementById("Address2").value.trim();
+
+      const finalText = `${address1} to ${address2}`;
+      document.getElementById("finalAddress").innerText = finalText;
+
+      let jeep = "No suitable jeep found";
+      let imagePath = "images/jeepDefault.jpg";
+
+      for (let route of jeepRoutes) {
+        if (
+          route.from.toLowerCase() === address1.toLowerCase() &&
+          route.to.toLowerCase() === address2.toLowerCase()
+        ) {
+          jeep = route.jeep;
+          imagePath = `images/${jeep}.jpg`;
+          break;
+        }
+      }
+
+      document.getElementById("jeepType").innerText = jeep;
+      document.getElementById("jeepPic").src = imagePath;
+    }
+  </script>
+</body>
+</html>
