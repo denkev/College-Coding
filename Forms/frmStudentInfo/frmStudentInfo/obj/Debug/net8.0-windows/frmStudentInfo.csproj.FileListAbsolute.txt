@@ -1,0 +1,16 @@
+C:\Users\The Mosers\Desktop\frmStudentInfo\frmStudentInfo\bin\Debug\net8.0-windows\frmStudentInfo.exe
+C:\Users\The Mosers\Desktop\frmStudentInfo\frmStudentInfo\bin\Debug\net8.0-windows\frmStudentInfo.deps.json
+C:\Users\The Mosers\Desktop\frmStudentInfo\frmStudentInfo\bin\Debug\net8.0-windows\frmStudentInfo.runtimeconfig.json
+C:\Users\The Mosers\Desktop\frmStudentInfo\frmStudentInfo\bin\Debug\net8.0-windows\frmStudentInfo.dll
+C:\Users\The Mosers\Desktop\frmStudentInfo\frmStudentInfo\bin\Debug\net8.0-windows\frmStudentInfo.pdb
+C:\Users\The Mosers\Desktop\frmStudentInfo\frmStudentInfo\obj\Debug\net8.0-windows\frmStudentInfo.Form1.resources
+C:\Users\The Mosers\Desktop\frmStudentInfo\frmStudentInfo\obj\Debug\net8.0-windows\frmStudentInfo.csproj.GenerateResource.cache
+C:\Users\The Mosers\Desktop\frmStudentInfo\frmStudentInfo\obj\Debug\net8.0-windows\frmStudentInfo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\The Mosers\Desktop\frmStudentInfo\frmStudentInfo\obj\Debug\net8.0-windows\frmStudentInfo.AssemblyInfoInputs.cache
+C:\Users\The Mosers\Desktop\frmStudentInfo\frmStudentInfo\obj\Debug\net8.0-windows\frmStudentInfo.AssemblyInfo.cs
+C:\Users\The Mosers\Desktop\frmStudentInfo\frmStudentInfo\obj\Debug\net8.0-windows\frmStudentInfo.csproj.CoreCompileInputs.cache
+C:\Users\The Mosers\Desktop\frmStudentInfo\frmStudentInfo\obj\Debug\net8.0-windows\frmStudentInfo.dll
+C:\Users\The Mosers\Desktop\frmStudentInfo\frmStudentInfo\obj\Debug\net8.0-windows\refint\frmStudentInfo.dll
+C:\Users\The Mosers\Desktop\frmStudentInfo\frmStudentInfo\obj\Debug\net8.0-windows\frmStudentInfo.pdb
+C:\Users\The Mosers\Desktop\frmStudentInfo\frmStudentInfo\obj\Debug\net8.0-windows\frmStudentInfo.genruntimeconfig.cache
+C:\Users\The Mosers\Desktop\frmStudentInfo\frmStudentInfo\obj\Debug\net8.0-windows\ref\frmStudentInfo.dll
